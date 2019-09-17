@@ -19,13 +19,18 @@ class ViewController: UIViewController {
     
     
     private func apiCall() {
-        let url = URL(string: "https://jsonplaceholder.typicode.com/posts")!
-        APIManager.shared.request(url: url, method: .get) { (result: Result<[Welcome], Error>) in
+        let url = URL(string: "https://api.denefits.com:3003/get_faq")!
+        APIManager.shared.request(url: url, params: ["access_token": "93e6a90a7aa6ed44187e956507516d0d"]) { (result: Result<Success<[FAQ]>, Error>) in
             switch result {
             case .failure(let error): print(error.localizedDescription)
             case .success(let data):
-                print(data.count)
-                print(data.forEach({print($0.title)}))
+                if data.isError == 1 {
+                    print(data.flag)
+                }
+                else {
+                    print(data.result.count)
+                    print(data.result.forEach({print($0.question)}))
+                }
             }
         }
     }

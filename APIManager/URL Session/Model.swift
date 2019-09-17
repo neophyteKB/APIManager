@@ -19,3 +19,19 @@ struct Welcome: Codable {
     
     
 }
+
+
+struct Success<T: Codable>: Codable {
+    let isError, flag: Int
+    let result: T
+    
+    enum CodingKeys: String, CodingKey {
+        case isError = "is_error"
+        case flag, result
+    }
+}
+
+// MARK: - Result
+struct FAQ: Codable {
+    let question, answer: String
+}
