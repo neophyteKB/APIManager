@@ -14,6 +14,8 @@
 		8AA7B2252330A0E700238F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA7B2232330A0E700238F21 /* LaunchScreen.storyboard */; };
 		8AA7B2302330A0E700238F21 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA7B22F2330A0E700238F21 /* APIManagerTests.swift */; };
 		8AA7B23B2330A0E700238F21 /* APIManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA7B23A2330A0E700238F21 /* APIManagerUITests.swift */; };
+		8AA7B24C2330A19200238F21 /* USession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA7B24B2330A19200238F21 /* USession.swift */; };
+		8AA7B24E2330A1B500238F21 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA7B24D2330A1B500238F21 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8AA7B2362330A0E700238F21 /* APIManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA7B23A2330A0E700238F21 /* APIManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerUITests.swift; sourceTree = "<group>"; };
 		8AA7B23C2330A0E700238F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AA7B24B2330A19200238F21 /* USession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USession.swift; sourceTree = "<group>"; };
+		8AA7B24D2330A1B500238F21 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		8AA7B2192330A0E600238F21 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				8AA7B2482330A15F00238F21 /* URL Session */,
 				8AA7B21A2330A0E600238F21 /* AppDelegate.swift */,
 				8AA7B21C2330A0E600238F21 /* ViewController.swift */,
 				8AA7B21E2330A0E600238F21 /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				8AA7B23C2330A0E700238F21 /* Info.plist */,
 			);
 			path = APIManagerUITests;
+			sourceTree = "<group>";
+		};
+		8AA7B2482330A15F00238F21 /* URL Session */ = {
+			isa = PBXGroup;
+			children = (
+				8AA7B24B2330A19200238F21 /* USession.swift */,
+				8AA7B24D2330A1B500238F21 /* Model.swift */,
+			);
+			path = "URL Session";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,8 @@
 			files = (
 				8AA7B21D2330A0E600238F21 /* ViewController.swift in Sources */,
 				8AA7B21B2330A0E600238F21 /* AppDelegate.swift in Sources */,
+				8AA7B24C2330A19200238F21 /* USession.swift in Sources */,
+				8AA7B24E2330A1B500238F21 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
